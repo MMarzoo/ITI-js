@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration page</title>
+    <style>
+      .fullname:invalid,
+      .password:invalid {
+        background-color: gray;
+      }
+
+      .fullname:valid,
+      .password:valid {
+        background-color: white;
+      }
+
+      .email:invalid {
+        background-color: gray;
+      }
+
+      .email:valid {
+        background-color: white;
+      }
+    </style>
+    <script src="register.js" defer></script>
+  </head>
+  <body>
+    <!--header-->
+    <h1 style="text-align: center">Registration</h1>
+
+    <!-- form -->
+    <form action="thanks.html" method="get">
+      <!-- User ID-->
+      <input type="text" name="userid" hidden />
+
+      <!--Full Name-->
+      <label for="fullname">Full Name: </label>
+      <input
+        type="text"
+        id="fullname"
+        class="fullname"
+        placeholder="Enter your Name"
+        required
+      />
+      <span id="namevalid">
+        <img
+          src="images/notvalid.png"
+          alt=""
+          width="10px"
+          height="10px"
+          class
+          validImg
+        />
+      </span>
+
+      <br />
+      <br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        class="email"
+        name="email"
+        required
+        placeholder="example@123.com"
+      />
+      <br />
+      <br />
+
+      <!-- Password -->
+      <label for="pwd">Password:</label>
+      <input type="password" class="password" name="pwd" required />
+      <br />
+      <br />
+
+      <!-- repeat paswword-->
+      <label for="rpwd">Repeat Password:</label>
+      <input type="password" class="password" name="rpwd" required />
+      <span id="pwdinvalid">
+        <img
+          src="images/notvalid.png"
+          alt=""
+          class="validImg"
+          height="10px"
+          width="10px"
+        />
+      </span>
+      <br />
+      <br />
+
+      <!--City-->
+      <label for="city">City: </label>
+      <select name="city" id="city">
+        <option value="" selected disabled>choose your city</option>
+        <option value="cairo">Cairo</option>
+        <option value="BNS">Beni Suef</option>
+        <option value="ALEX">Alexandria</option>
+      </select>
+      <br />
+      <br />
+
+      <!-- Terms & Conditions -->
+      <label for="terms">
+        I agree to the
+        <a href="terms.html" target="_blank">terms and conditions</a>
+      </label>
+      <input type="checkbox" name="agreed" required />
+      <br />
+      <br />
+      <!-- *Submit & Reset -->
+      <button type="submit" accesskey="s">submit</button>
+      <button type="reset" accesskey="r">reset</button>
+      <span id="forminvalid"></span>
+    </form>
+  </body>
+</html>
