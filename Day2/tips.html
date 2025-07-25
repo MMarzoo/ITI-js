@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips of the day</title>
+    <script src="tips.js" defer></script>
+  </head>
+  <body>
+    <p id="tip"></p>
+    <br /><br />
+    <button id="date">Show date</button>
+    <span id="time"></span>
+
+    <!--task 5-->
+    <form action="">
+      <label for="username">Full Name:</label>
+      <input
+        type="text"
+        id="username"
+        pattern="^[A-Z][a-z]{3,}\s[A-z][a-z]{3,}$"
+      />
+      <br />
+      <!--Bouns Task 2-->
+      <label for="phone"
+        >Phone Number:
+        <input type="text" id="phone" pattern="^(00201)[0125][0-9]{8}" />
+      </label>
+      <br />
+      <button type="submit">submit</button>
+      <br />
+      <button id="btndate">Show Date</button>
+      <p id="showdate"></p>
+      <br />
+      <button id="btnday">Show Day</button>
+      <p id="showday"></p>
+    </form>
+  </body>
+</html>
