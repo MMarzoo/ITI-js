@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration page</title>
+  </head>
+  <body>
+    <!--header-->
+    <h1 style="text-align: center">Registration</h1>
+
+    <!-- form -->
+    <form action="thanks.html" method="get">
+      <!-- User ID-->
+      <input type="text" name="userid" hidden />
+
+      <!-- first name -->
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" required />
+      <br />
+      <br />
+
+      <!-- last name -->
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" required />
+      <br />
+      <br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" name="email" required placeholder="example123.com" />
+      <br />
+      <br />
+
+      <!-- Password -->
+      <label for="pwd">Password:</label>
+      <input type="password" name="pwd" required />
+      <br />
+      <br />
+
+      <!-- repeat paswword-->
+      <label for="rpwd">Repeat Password:</label>
+      <input type="password" name="rpwd" required />
+      <br />
+      <br />
+
+      <!--Birth date-->
+      <label for="bd">Birth Date:</label>
+      <input type="date" name="bd" />
+      <br />
+      <br />
+
+      <!--User picture-->
+      <label for="pic">Your Picture:</label>
+      <input type="file" name="pic" />
+      <br />
+      <br />
+
+      <!--Gender-->
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br />
+      <br />
+
+      <!--Faculty-->
+      <label for="faculty">Faculty:</label>
+      <select name="faculty">
+        <option value="" selected disabled>Select your faculty..</option>
+        <option value="CS">Computer Science</option>
+        <option value="Eng">Engineering</option>
+        <option value="Art">Arts</option>
+      </select>
+      <br />
+      <br />
+
+      <!--Interests-->
+      <p>Interests :</p>
+      <input type="checkbox" name="interest" value="coding" />
+      <label for="">Coding</label>
+      <input type="checkbox" name="interest" value="reading" />
+      <label for="">reading</label>
+      <input type="checkbox" name="interest" value="video games" />
+      <label for="">video games</label>
+      <input type="checkbox" name="interest" value="going out" />
+      <label for="">going out</label>
+      <input type="checkbox" name="interest" value="working out" />
+      <label for="">working out</label>
+      <br />
+      <br />
+
+      <!--About you-->
+      <label for="about you">About you</label>
+      <br />
+      <textarea
+        name="about"
+        cols="50"
+        rows="10"
+        placeholder="Tell us a brief about yourself..."
+      ></textarea>
+      <br />
+      <br />
+
+      <!-- Terms & Conditions -->
+      <label for="terms">
+        I agree to the
+        <a href="terms.html" target="_blank">terms and conditions</a>
+      </label>
+      <input type="checkbox" name="agreed" required />
+      <br />
+      <br />
+      <!-- *Submit & Reset -->
+      <button type="submit" accesskey="s">submit</button>
+      <button type="reset" accesskey="r">reset</button>
+    </form>
+  </body>
+</html>
